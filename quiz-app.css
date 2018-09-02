@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Monda', sans-serif;
+  background: url('http://www.triea.org/wp-content/uploads/2015/09/Basketball-Court_Landscape.jpg') fixed;
+  color: white;
+}
+
+header {
+  width: 100%;
+  padding: 10px 10px;
+  color: red;
+  text-shadow: 5px 5px 10px black;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+li {
+  padding: 10px 10px;
+  list-style: none;
+  text-align: center;
+  font-size: 25px;
+  display: inline;
+}
+
+.topLeft {
+  float: left;
+}
+
+.topRight, .currentMissed {
+  float: right;
+}
+
+.currentMissed {
+  margin-left: 6px;
+}
+
+.homePage {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 200px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  font-weight: heavy;
+  font-size: 30px;
+}
+
+button {
+  padding: 20px;
+  border: solid black 1px ;
+  background-color: rgb(47, 0, 255);
+  color: white;
+  font-size: 16px;
+  font-weight: heavy;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 70px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.quizContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: none;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+input:checked {
+  border: 8px solid #ff2b2b;
+}
+
+input[type=radio] {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+legend {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+}
+
+fieldset {
+  padding: 40px;
+  display: inline-block;
+  background-color: rgba(85, 85, 85, .5);
+  border-radius: 7px;
+  border: solid white 1px;
+}
+
+form button {
+  border: solid white 1px;
+  clear: both;
+  display: block;
+  margin: 60px auto 20px;
+}
+
+.answer {
+  flex: 1 1 auto;
+}
+
+.answerOption {
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 20px;
+  width: 19%;
+  display: inline-block;
+  text-shadow: 5px 5px 10px black;
+  cursor: pointer;
+}
+
+.answerOption span {
+  display: block;
+}
+
+.answerFeedback {
+  text-align: center;
+  margin: 200px auto;
+}
+
+.answerFeedback p {
+  font-size: 40px;
+  text-shadow: 5px 5px 10px black;
+}
+
+.resultsText {
+  text-align: center;
+  margin: 200px auto;
+  text-shadow: 5px 5px 10px black;
+}
+
+.resultsText h3 {
+  font-size: 40px;
+}
+
+.resultsText p {
+  font-size: 30px;
+}
+
+
+
+@media only screen and (min-device-width: 375px) 
+  and (max-device-width: 667px)  {
+	.topLeft, .topRight {
+    display: block;
+		font-size: 10px;
+		margin: 0 5px 5px;
+	}
+
+  .bodySection {
+    padding-bottom: 15px;
+  }
+
+  .answerFeedback {
+    margin-top: 50px;
+  }
+
+	legend {
+    padding: 0 1em;
+	  font-size: 18px;
+	  margin-top: 3em;
+    margin-bottom: 0px;
+	}
+
+	.answerOption {
+    text-align: left;
+    padding-left: 3em;
+    width: 100%;
+		margin-bottom: 0px;
+	}
+
+  form button {
+    margin-top: 10px;
+  }
+
+  fieldset {
+    padding: 10px;
+  }
+
+  .restartButton {
+    margin-top: 50px;
+  }
+
+  .resultsText {
+    margin: 70px auto;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+	.answerFeedback {
+		width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+
+	.questionBody {
+		padding: 5px;
+	}
+
+	.currentQuesion {
+		padding-left: 10px;
+		padding-bottom: 10px;
+	}
+
+	.currentScore {
+		padding-right: 0px;
+		padding-bottom: 10px;
+	}
+
+  .currentMissed {
+    padding-right: 10px;
+  }
+}
